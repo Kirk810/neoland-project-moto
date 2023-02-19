@@ -8,10 +8,18 @@ const Header = () => {
   return (
     <header className="Header">
       <nav>
-        <NavLink to="/">Home</NavLink>
-        {!user && <NavLink to="/login">Prices</NavLink>}
-        {user && <NavLink to="/about">About</NavLink>}
-        {user && <button onClick={() => logout()}>Logout</button>}
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          {!user && <NavLink to="/login">Prices</NavLink>}
+        </li>
+        <li>
+          {user && <NavLink to="/about">About</NavLink>}
+        </li>
+        <li>
+          {user && <button onClick={() => logout()}>Logout</button>}
+        </li>
       </nav>
     </header>
   )

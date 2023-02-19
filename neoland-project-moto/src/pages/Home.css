@@ -1,31 +1,48 @@
-#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-  }
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: 100px 100px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
 
-  .Home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.Home > H2 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+}
 
-  }
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 10px 20px;
+  box-shadow: 0 0 15px;
+  border-radius: 30px;
+  width: 300px;
+  height: 350px;
+}
 
-  .Home > H2 {
-    position: absolute;
-    padding: 2rem;
-  }
+.Card > img {
+  height: 10rem;
+  position: relative;
+  bottom: 30px;
+}
 
-  .Home > div {
-    background-color: aliceblue;
-    border-radius: 30px;
-    width: 300px;
-    height: 400px;
-    position: relative;
-    top: 5rem;
-  }
+.Card > h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .Home > div > img {
-    height: 10rem;
-  }
+.Card:hover{
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
