@@ -1,0 +1,10 @@
+.Header {
+    display: flex;
+    justify-content: end;
+    font-size: 1rem;
+    gap: 3rem;
+}
+
+nav{
+    gap: 5px;
+}
