@@ -1,6 +1,17 @@
+.About > h3{
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
 .Gallery > h3{
-  color: white;
-  position: absolute;
+  position: relative;
+  left: 600px;
+}
+
+.Gallery > h3 > img{
+  width: 500px;
 }
 
 .Gallery {

@@ -12,10 +12,10 @@ const Header = () => {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          {!user && <NavLink to="/login">Prices</NavLink>}
+          {!user && <NavLink to="/login">See prices</NavLink>}
         </li>
         <li>
-          {user && <NavLink to="/about">About</NavLink>}
+          {user && <NavLink to="/about">Gallery</NavLink>}
         </li>
         <li>
           {user && <button onClick={() => logout()}>Logout</button>}

@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import useDebounce from "../hooks/usedebounce";
+import { userContext } from "../context/Context"
 import "./About.css";
 
 const About = () => {
   const [brand ,setBrand] = useState([]);
   const [filteredBrand, setFilteredBrands] = useState([]);
+  const { user } = useContext (userContext);
   const debounceValue = useDebounce(filteredBrand, 500);
 
   useEffect(() => {
@@ -29,6 +31,7 @@ const About = () => {
     return(
       <div className="About">
         <h2>GALLERY</h2>
+        <h3>{user}, which one for ruin yourself?</h3>
           <nav>
             <button onClick={() => {
               const superbikes = brand.filter((moto) => moto.type === "Superbike");
@@ -60,7 +63,7 @@ const About = () => {
                 </div>
               ))
             ) : (
-              <h3>No match</h3>
+              <h3><img src="https://www.gif-maniac.com/gifs/8/8254.gif" alt="moto vueltas" /></h3>
             )}
           </div>
       </div>

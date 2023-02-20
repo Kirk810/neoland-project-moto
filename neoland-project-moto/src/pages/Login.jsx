@@ -7,8 +7,11 @@ const Login = () => {
   const { login } = useContext(userContext);
   return (
     <main className="Login">
-      <input type="text" placeholder="Username..." ref={inputRef} />
-      <button onClick={() => login(inputRef.current.value)}>Login</button>
+      <h3>To see the prices log in!!</h3>
+      <div className="Input">
+        <input type="text" placeholder="Username" ref={inputRef} />
+        <button onClick={() => login(inputRef.current.value)}>Login</button>
+      </div>
     </main>
   );
 };

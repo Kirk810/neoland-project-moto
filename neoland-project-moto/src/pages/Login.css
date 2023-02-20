@@ -1,10 +1,17 @@
-.Login{
+.Input{
     display: flex;
     justify-content: center;
 }
 
-.Login > button{
+.Input > button{
     border-radius: 30px;
     height: 30px;
     width: 60px;
+}
+
+.Login > h3{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 }

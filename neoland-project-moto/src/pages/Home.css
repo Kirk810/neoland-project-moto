@@ -17,6 +17,31 @@
   padding: 2rem;
 }
 
+.Home > h3{
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.Home > p{
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  background-color: black;
+  width: 1000px;
+  height: 200px;
+  position: relative;
+  left: 475px;
+  border-radius: 30px;
+}
+
+.Moto{
+  padding-top: 50px;
+  position: relative;
+  top: 50px;
+}
+
 .Card {
   display: flex;
   flex-direction: column;
