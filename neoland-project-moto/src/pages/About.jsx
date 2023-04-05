@@ -1,4 +1,5 @@
 import { useEffect, useState, useContext } from "react";
+import { FormattedMessage } from "react-intl";
 import useDebounce from "../hooks/usedebounce";
 import { userContext } from "../context/Context"
 import "./About.css";
@@ -30,8 +31,8 @@ const About = () => {
 
     return(
       <div className="About">
-        <h2>GALLERY</h2>
-        <h3>{user}, which one for ruin yourself?</h3>
+        <h2><FormattedMessage id="about.gallery" /></h2>
+        <h3><FormattedMessage id="about.input" /></h3>
           <nav>
             <button onClick={() => {
               const superbikes = brand.filter((moto) => moto.type === "Superbike");

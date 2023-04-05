@@ -3,22 +3,24 @@ import { useNavigate } from "react-router-dom";
 
 export const userContext = createContext();
 
-export const UserContextProvider = ({ children }) => {
-    const [user, setUser] = useState(null);
-    const navigate = useNavigate();
-    const login = (data) => {
-        setUser(data);
-        navigate("/about");
-    };
+const UserContextProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
+  const login = (data) => {
+    setUser(data);
+    navigate("/about");
+  };
 
-    const logout = () => {
-        setUser(null);
-        navigate("/");
-    };
+  const logout = () => {
+    setUser(null);
+    navigate("/");
+  };
 
-    return (
-        <userContext.Provider value={{ user, login, logout}}>
-            {children}
-        </userContext.Provider>
-    )
-} 
+  return (
+    <userContext.Provider value={{ user, login, logout }}>
+      {children}
+    </userContext.Provider>
+  );
+};
+
+export default UserContextProvider;

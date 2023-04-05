@@ -5,11 +5,13 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Header from "./components/Header";
 import ProtectedRoute from "./components/ProtectedRoute";
+import SelectLang from "./components/SelectLang";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <SelectLang />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
